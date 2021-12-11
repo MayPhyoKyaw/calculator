@@ -1,13 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&amp;family=PT+Sans+Narrow&amp;display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #5d6a78;
+  font-family: 'Orbitron', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.outer {
+  width: 350px;
+  min-height: fit-content;
+  margin: 100px auto 50px;
+  border: 3px solid #192b3d;
+  border-radius: 3px;
+  background-color: #0d1d2e;
+}
+
+.display {
+  position: relative;
+  width: 94%;
+  margin: 5px 10px;
+  min-height: 100px;
+  background-color: #aec2d8;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7) inset; 
+  padding: 20px;
+  letter-spacing: 0;
+}
+
+.operationDisplay {
+  font-size: 14px;
+  color: rgb(128, 57, 0);
+  text-align: right;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+}
+
+.resultDisplay {
+  position: absolute;
+  font-size: 18px;
+  color: #be6c00;
+  text-align: right;
+  right: 18px;
+  bottom: 15px;
+}
+
+.input-group {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.digit-block {
+  float: left;
+  width: 240px;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.op-block {
+  float: right;
+  width: 75px;
+  margin-right: 13px;
+}
+
+.input {
+  border: none;
+  font-size: 22px;
+  margin: 0 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.input:hover {
+  opacity: 0.7;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+  border-radius: 2px;
+  font-size: 23px;
+}
+
+.clear {
+  width: 148px;
+  height: 55px;
+  background-color: #9c1a00;
+  color: white;
+}
+
+.digit-zero {
+  width: 145px;
+  height: 55px;
+  background-color: #54748c;
+}
+
+.operator {
+  width: 70px;
+  height: 55px;
+  background-color: #365166;
+  color: white;
+}
+
+.digit {
+  width: 70px;
+  height: 55px;
+  border: none;
+  background-color: #54748c;
+}
+
+.equal {
+  width: 70px;
+  height: 118px;
+  background-color: #006b73;
+  color: white;
 }
